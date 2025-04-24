@@ -6,3 +6,66 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+
+// Css
+body {
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 650;
+    font-style: normal;
+}
+
+//NAVBAR
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    padding-bottom: 20px;
+    text-decoration: none;
+
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #0082F9;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #0082F9;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+
+//JUMBO
+#my-jumbotron {
+    background-image: url('../img/jumbotron.jpg');
+    height: 300px;
+    background-size: cover;
+
+}
+
+#my-button {
+    position: absolute;
+    top: 83%;
+    left: 17%;
+    padding: 5px 35px;
+    font-size: 20px;
+    background-color: #0082F9;
+
+    color: white;
+    border: none;
+
+    cursor: pointer;
+    z-index: 10;
+}
+
+.my-button:hover {
+    background-color: #0056b3;
+}
