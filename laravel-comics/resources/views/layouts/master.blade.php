@@ -14,7 +14,10 @@
     @include('partials/header')
   
     @include('/partials/jumbotron')
-    @yield('contenuto')
+    <main>
+        @yield('contenuto')
+    </main>
+    
 
     @include('partials/footer')
   

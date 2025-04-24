@@ -1,6 +1,15 @@
 @extends('layouts/master')
 
 @section('contenuto')
-    <h2>CONTENUTO</h2>
-    <h3>CARDS</h3>
+@php
+    $comics = config('comics');
+//    dd($comics); 
+@endphp
+    <div class="row ">
+        @foreach ($comics as $comic)
+            <div class="col ">
+                <x-cards :comic="$comic" />
+            </div>
+        @endforeach
+    </div>
 @endsection

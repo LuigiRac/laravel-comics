@@ -47,13 +47,14 @@ body {
 #my-jumbotron {
     background-image: url('../img/jumbotron.jpg');
     height: 300px;
+    width: auto;
     background-size: cover;
 
 }
 
 #my-button {
     position: absolute;
-    top: 83%;
+    top: 45%;
     left: 17%;
     padding: 5px 35px;
     font-size: 20px;
@@ -68,4 +69,36 @@ body {
 
 .my-button:hover {
     background-color: #0056b3;
+}
+
+//MAIN
+main {
+    background-color: #1C1C1C;
+    color: white;
+
+}
+
+//CARDS
+
+.margin-card {
+    margin-top: 30px;
+}
+
+.card-container1 {
+    width: 200px;
+    height: 220px;
+
+}
+
+.card-container2 {
+    height: 140px;
+    overflow: hidden;
+}
+
+.card-container.img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: top;
+
 }
