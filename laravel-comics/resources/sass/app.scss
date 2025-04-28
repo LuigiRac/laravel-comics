@@ -97,8 +97,6 @@ main {
 }
 
 //CARDS
-
-
 .card-container1 {
     width: 200px;
     height: 220px;
@@ -149,4 +147,48 @@ main {
     font-size: 0.8em;
     display: inline-block;
     white-space: nowrap;
+}
+
+//ABOUT US
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+    background-size: cover;
+
+}
+
+.column {
+    margin-right: 40px;
+}
+
+
+.column h3 {
+    margin-top: 0;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column ul li {
+    margin-bottom: 5px;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #6A6968;
+}
+
+.column ul li a:hover {
+    color: #0056b3;
+
 }

@@ -33,4 +33,42 @@
         @endforeach
     </div>
 
+
+    <div class="about-us-container">
+        <div class="column">
+            <h3><strong>DC COMICS</strong></h3>
+            <ul>
+                @foreach(config('aboutUs.dcComics') as $item)
+                    <li><a href="#">{{ $item }}</a></li>
+                @endforeach
+            </ul>
+            <h3><strong>SHOP</strong></h3>
+            <ul>
+                @foreach(config('aboutUs.shop') as $item)
+                    <li><a href="#">{{ $item }}</a></li>
+                @endforeach
+            </ul>
+        </div>
+        <div class="column">
+            <h3><strong>DC</strong></h3>
+            <ul>
+                @foreach(config('aboutUs.dc') as $item)
+                    <li><a href="#">{{ $item }}</a></li>
+                @endforeach
+            </ul>
+        </div>
+        <div class="column">
+            <h3><strong>SITES</strong></h3>
+            <ul>
+                @foreach(config('aboutUs.sites') as $item)
+                    <li><a href="#">{{ $item }}</a></li>
+                @endforeach
+            </ul>
+        </div>
+
+        <img src="{{ Vite::asset ('resources/img/dc-logo-bg.png')}}">
+
+    </div>
+    
+
     @endsection
