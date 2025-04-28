@@ -7,5 +7,5 @@ use Illuminate\Support\Facades\Route;
 // })->name('master');
 
 Route::get('/', function () {
-    return view('home');
-})->name('home');
+    return view('comics/index');
+})->name('index');
